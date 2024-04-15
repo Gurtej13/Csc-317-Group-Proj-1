@@ -1,0 +1,219 @@
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    background-color: #FFCC00; /* Set navigation bar background color to yellow */
+}
+
+.nav-list li {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.nav-list li a.Login {
+    background-color: #DB0A40; /* Set login button background color to red */
+    color: white; /* Set text color to white for better visibility */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border-radius: 5px; /* Add rounded corners */
+}
+
+.nav-list li a.Login:hover {
+    background-color: #9B0430; /* Darken the red color on hover */
+}
+
+.section1,
+.section2 {
+    opacity: 0;
+    transition: opacity 1s ease;
+    text-align: center; /* Center align the content */
+    margin-top: 50px; /* Add some top margin for spacing */
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column; /* Stack content vertically */
+}
+.driver-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.driver-info article {
+    margin: 20px;
+    max-width: 400px;
+    text-align: center;
+}
+
+.driver-info article img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.driver-info article p {
+    flex: 1;
+    margin: 0;
+    padding: 0 10px;
+    text-align: justify;
+}
+
+.history,
+.driver-info {
+    color: white; /* Set text color to #23326A */
+}
+
+.history {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+
+.history p {
+    max-width: 600px;
+    padding: 0 20px;
+}
+
+.history {
+    animation: fadeIn 1s forwards; /* Apply animation */
+}
+.mission,
+.championship {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+
+.mission p,
+.championship p {
+    max-width: 600px;
+    padding: 0 20px;
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+body.scrolled .section1,
+body.scrolled .section2 {
+    opacity: 1;
+}
+
+
+body.show-history .history {
+    animation-delay: 0.5s; /* Delay animation until scrolled */
+}
+
+
+
+.driver-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+body {
+    color: #fff; /* Set text color to white */
+    font-family: Arial, sans-serif; /* Choose a readable font */
+    line-height: 1.6; /* Adjust line height for readability */
+    background-color: #23326A; /* Set default background color */
+    background-image: url(./resource/Bulls.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative; /* Set body to relative positioning */
+    transition: background-color 0.5s; /* Smooth transition for background color change */
+}
+
+.center-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+h1 {
+    position: fixed; /* Set h1 to fixed positioning */
+    top: 70%; /* Position h1 vertically further below the center */
+    left: 50%; /* Position h1 horizontally at 50% from the left */
+    transform: translate(-50%, -50%); /* Center h1 horizontally */
+    color: #DB0A40; /* Set title color to red */
+    padding: 20px; /* Add padding */
+    border-radius: 10px; /* Add border radius */
+    z-index: -1; /* Set z-index to move the h1 behind other elements */
+    font-size: 50px; /* Increase font size */
+}
+
+h1 strong {
+    font-weight: bold; /* Make the text bold */
+}
+
+/* Additional styles for the second background */
+.second-background {
+    background-color: #DB0A40;; /* Set default background color */
+}
+/* Style for the border */
+.partners-pic {
+    display: flex; /* Use flexbox to align the partner images */
+    justify-content: center; /* Center the partner images horizontally */
+}
+
+.partners-pic img {
+    width: 100px; /* Set the width of partner images */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 10px; /* Add margin around partner images */
+}
+
+.partners-pic img[src$='backar.jpg'] {
+    width: 150px; /* Set a specific width for the "byt-car" image */
+}
+/* Add a border-bottom to every section except the last one */
+section {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px; /* Add some space between sections */
+}
+
+/* Remove border-bottom from the last section */
+footer section:last-child {
+    border-bottom: none;
+}
+
+
+footer {
+    padding: 20px; /* Add padding around the table */
+    border-top: 2px solid white; /* Add a border at the top of the footer */
+}
+
+form {
+    margin: 0; /* Remove default margin from the form */
+    float: right; /* Float the form to the right */
+}
+
+label {
+    display: block; /* Display labels as block elements for better spacing */
+    margin-bottom: 10px; /* Add spacing between labels */
+}
+
+.footin {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.message-us {
+    flex: 1;
+    text-align: right;
+}
