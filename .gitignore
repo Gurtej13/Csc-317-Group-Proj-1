@@ -1,0 +1,39 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Node.js
+node_modules/
+
+# Dependency directories
+vendor/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Logs and cache files
+logs/
+*.log
+npm-debug.log*
+yarn-error.log*
+*.cache
+*.sql
+*.sqlite
+*.sqlite3
+
+# Visual Studio Code
+.vscode/
+
+# Compiled binaries
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Miscellaneous
+*.tmp
+*.swp
