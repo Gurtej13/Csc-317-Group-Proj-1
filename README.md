@@ -12,7 +12,8 @@ This is a simple HTML document for a Red Bull Racing website. Below is a breakdo
     - [Our Drivers](#driver-info)
     - [Partners](#partners)
     - [Footer](#footer)
-3. [CSS Script](#css-script)
+3. [Mockup](#mockup)  
+4. [CSS Script](#css-script)
 
 ## Overview
 This HTML document represents a basic website layout for Red Bull Racing. It includes a header, several sections detailing the team's history, mission, championship achievements, information about the drivers, partners, and a footer with contact information.
@@ -52,6 +53,9 @@ This HTML document represents a basic website layout for Red Bull Racing. It inc
 ### Footer
 - Includes contact information and a form for users to submit messages.
 
+---
+## Mockup
+![Red Bull Racing Page Mockup](RedBullMockup.JPG)
 ---
 
 ## CSS Script
